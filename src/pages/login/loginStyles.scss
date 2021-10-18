@@ -1,0 +1,133 @@
+@import "../../styles/colors.scss";
+
+.container-login {
+  height: 100vh;
+  position: relative;
+
+  .container {
+    padding: 15px;
+    margin-top: 2vh;
+    .container-actions {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+
+      .container-image{
+        padding: 0;
+        img{
+          border: 3px solid $black;
+          background-color: $black;
+          max-width: 350px;
+          max-height: 250px;
+        }
+      }
+    }
+
+    .container-form-login {
+      form {
+        fieldset {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          border: 3px solid $black;
+        }
+      }
+    }
+  }
+
+  .container-fluid {
+    padding: 5px;
+    .container-meta {
+      display: grid;
+      grid-template-columns: 31% 69%;
+      grid-template-rows: 100%;
+
+      .meta-localization {
+        iframe {
+          border: 0;
+        }
+      }
+
+      .meta-info {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        // grid-template-rows: 100%;
+        padding-left: 10px;
+        // height: 100%;
+
+        .schedules {
+          h2 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+          }
+          .schedules-list {
+            .schedules-item {
+              margin-bottom: 3px;
+              .day {
+                margin-right: 15px;
+              }
+            }
+          }
+        }
+
+        .contact{
+          transform: translateX(-20%);
+          h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+          }
+          .contact-list{
+            .contact-item{
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              margin-bottom: 10px;
+              span{
+                margin-right: 8px;
+              }
+              a{
+                text-decoration: none;
+                color: $black;
+              }
+            }
+          }
+          svg{
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+          }
+        }
+
+        .address {
+          grid-row-start: 2;
+          h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+          }
+          address{
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+input {
+  border: 3px solid black;
+  border-radius: 4px;
+  &::placeholder {
+    color: $black;
+  }
+}

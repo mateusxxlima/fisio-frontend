@@ -1,0 +1,59 @@
+@import "../../styles/colors.scss";
+
+.actions-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container-actions {
+    width: 85%;
+    margin-top: 42px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+  }
+}
+
+//table
+
+.table-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: $black;
+}
+table {
+  width: 85%;
+  border-collapse: collapse;
+  td,
+  th {
+    border-bottom: 3px solid $black;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+  }
+
+  td{
+    svg{
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+}

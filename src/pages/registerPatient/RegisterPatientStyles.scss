@@ -1,0 +1,82 @@
+@import "../../styles/colors.scss";
+
+.register-forms{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    text-decoration: none;
+    color: $black;
+    align-self: flex-end;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 3px solid $black;
+    transition: 0.2s;
+    &:hover{
+      background-color: $primary;
+    }
+    span{
+      font-size: 1.3rem;
+    }
+    svg{
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .register{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+      margin-bottom: 10px;
+    }
+    input{
+      &.min{
+        width: 5%;
+      }
+      &.hidden{
+        display: none;
+      }
+    }
+    .form-group{
+      display: inline-flex;
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+      input{
+        padding: 1px 0px;
+        width: 100%;
+        &.date{
+          width: 20%;
+        }
+      }
+      label{
+        background-color: $primary;
+        border: 3px solid $black;
+        border-radius: 5px;
+        padding: 0px 3px;
+        padding-right: 50px;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        &.treatment{
+          width: 35%;
+        }
+      }
+    }
+  }
+  .register-actions{
+    display: flex;
+    justify-content: space-between;
+  }
+}

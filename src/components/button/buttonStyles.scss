@@ -1,0 +1,15 @@
+@import "../../styles/colors.scss";
+
+.button{
+  border: 3px solid $black;
+  outline: none;
+  color: $black;
+  background-color: $gray;
+  padding: 2px 12px;
+  border-radius: 2px;
+
+  &.primary{
+    background-color: $primary;
+    color: $white;
+  }
+}

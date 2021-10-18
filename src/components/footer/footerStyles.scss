@@ -1,0 +1,40 @@
+@import "../../styles/colors.scss";
+
+footer{
+  margin-top: 40px;
+  background-color: $primary;
+  border-top: 3px solid $black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.container-footer{
+  width: 85%;
+  margin: 0 auto;
+  padding: 15px 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .footer-copy{
+    color: $white;
+  }
+}
+
+.meta-list{
+  li{
+    display: inline-flex;
+    gap: 10px;
+    a{
+      text-decoration: none;
+      display: block;
+      color: $black;
+      padding: 5px;
+      svg{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
