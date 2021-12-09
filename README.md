@@ -2,7 +2,7 @@
 
 ## The Project
 
-Web application for a physiotherapy and pilates clinic, implemented in ReactJS as a front-end, NodeJS as a back-end and PostgreSQL as a relational database, project implemented in a work bringing together three disciplines: Software Engineering, Programming 2 and Database 1 of the Computer Science course at the Universidade Federal da Fronteira Sul.
+Web application for a physiotherapy and pilates clinic, implemented in ReactJS like front-end, NodeJS like back-end and PostgreSQL like relational database, project implemented in a set of three disciplines: Software Engineering, Programming 2 and Database 1 of the Computer Science course at the Universidade Federal da Fronteira Sul.
 
 ## Architecture
 
